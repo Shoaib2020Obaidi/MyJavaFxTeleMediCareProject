@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1050.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectmine.SignupDoctor_ByDoctorController">
+   <children>
+      <PasswordField fx:id="password" cacheShape="false" layoutX="211.0" layoutY="451.0" opacity="0.7" prefHeight="32.0" prefWidth="250.0" promptText="Enter Your Password" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="fullName" cacheShape="false" layoutX="210.0" layoutY="140.0" opacity="0.7" prefHeight="32.0" prefWidth="250.0" promptText="Enter Your Full  Name" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="speciality" cacheShape="false" layoutX="210.0" layoutY="174.0" opacity="0.7" prefHeight="32.0" prefWidth="250.0" promptText="Enter Your Medical Profession" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="clinicLocation" cacheShape="false" layoutX="211.0" layoutY="242.0" opacity="0.7" prefHeight="32.0" prefWidth="250.0" promptText="Insert Your Clinic's Location" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="userName" cacheShape="false" layoutX="211.0" layoutY="416.0" opacity="0.7" prefHeight="32.0" prefWidth="250.0" promptText="Enter Your User Name" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ID" cacheShape="false" layoutX="210.0" layoutY="208.0" opacity="0.7" prefHeight="32.0" prefWidth="250.0" promptText="Insert Your NID No" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="mobileNumber" cacheShape="false" layoutX="211.0" layoutY="346.0" opacity="0.7" prefHeight="32.0" prefWidth="250.0" promptText="Enter Your Mobile Number" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Pane layoutX="9.0" layoutY="20.0" prefHeight="74.0" prefWidth="1029.0" style="-fx-background-color: #cccccc;">
+         <children>
+            <Label layoutX="263.0" layoutY="4.0" prefHeight="68.0" prefWidth="542.0" text="Doctor Registration Form">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="74.0" fitWidth="94.0" layoutX="59.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/hospital2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="87.0" fitWidth="88.0" layoutX="877.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/hospital1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="198.0" fitWidth="269.0" layoutX="524.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/hospital2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="80.0" layoutY="138.0" prefHeight="32.0" prefWidth="105.0" text="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="174.0" prefHeight="32.0" prefWidth="105.0" text="Speciality">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="208.0" prefHeight="32.0" prefWidth="118.0" text="National ID No">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="247.0" prefHeight="32.0" prefWidth="118.0" text="Clinic's Location">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="346.0" prefHeight="32.0" prefWidth="105.0" text="Mobile No">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="414.0" prefHeight="32.0" prefWidth="105.0" text="User Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="449.0" prefHeight="32.0" prefWidth="105.0" text="Password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="277.0" prefHeight="32.0" prefWidth="118.0" text="Days Available">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="timeAvailable" layoutX="210.0" layoutY="312.0" prefHeight="32.0" prefWidth="250.0" promptText="Enter the Days You are Available" />
+      <Label layoutX="80.0" layoutY="312.0" prefHeight="32.0" prefWidth="118.0" text="Times Available">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="393.0" fitWidth="205.0" layoutX="807.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/reg-doctor.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="562.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/ambulance.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signUpReg" layoutX="309.0" layoutY="501.0" mnemonicParsing="false" onAction="#signUp" prefHeight="32.0" prefWidth="153.0" style="-fx-background-color: #f123ff;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBtn" layoutX="74.0" layoutY="501.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: #0f0f0f;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="clear" layoutX="211.0" layoutY="501.0" mnemonicParsing="false" onAction="#clear" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 5; -fx-border-color: #00ff00;" text="Clear" textFill="#312d2d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="progress" fitHeight="148.0" fitWidth="185.0" layoutX="568.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/capsule2.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="emailAddress" cacheShape="false" layoutX="212.0" layoutY="381.0" opacity="0.7" prefHeight="32.0" prefWidth="250.0" promptText="Insert Your Email Address" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="81.0" layoutY="381.0" prefHeight="32.0" prefWidth="105.0" text="Email Address">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="daysAvailableChoiceBox" cacheShape="false" layoutX="210.0" layoutY="277.0" opacity="0.7" prefHeight="32.0" prefWidth="250.0" promptText="Insert Your Clinic's Location" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <JFXTimePicker fx:id="timeAvailTimePicker" editable="true" layoutX="524.0" layoutY="110.0" promptText="Choose the Time" />
+      <JFXDatePicker fx:id="dateAvailDatePicker" layoutX="707.0" layoutY="112.0" promptText="Choose Date" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="250.0" prefWidth="1003.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectmine.ShowDoctorBeforeApprovalController">
+   <children>
+      <ImageView fitHeight="122.0" fitWidth="154.0" layoutX="284.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/pending2.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="progress" fitHeight="247.0" fitWidth="245.0" layoutX="754.0" layoutY="-41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/pending1.gif" />
+         </image></ImageView>
+      <ScrollPane layoutX="41.0" layoutY="99.0" prefHeight="122.0" prefWidth="919.0">
+         <content>
+            <TableView fx:id="tableView" editable="true" prefHeight="126.0" prefWidth="1122.0">
+               <columns>
+                  <TableColumn fx:id="nameCol" prefWidth="94.39996337890625" text="Name" />
+                  <TableColumn fx:id="spacialityCol" prefWidth="105.59999084472656" text="Spaciality" />
+                  <TableColumn fx:id="IDCol" prefWidth="92.00006103515625" text="ID No" />
+                  <TableColumn fx:id="CliinicLocationCol" prefWidth="132.79998779296875" text="Clinic's Location" />
+                  <TableColumn fx:id="daysAvailableCol" prefWidth="112.0" text="Days Available" />
+                  <TableColumn fx:id="timeAvailableCol" prefWidth="104.0" text="Times Available" />
+                  <TableColumn fx:id="mobileNoCol" prefWidth="116.800048828125" text="Mobile No" />
+                  <TableColumn fx:id="emailAddCol" prefWidth="143.199951171875" text="Email Address" />
+                  <TableColumn fx:id="userNameCol" prefWidth="114.40008544921875" text="User Name" />
+                  <TableColumn fx:id="passwordCol" prefWidth="100.7999267578125" text="Password" />
+               </columns>
+            </TableView>
+         </content></ScrollPane>
+      <Button fx:id="approveBtn" layoutX="65.0" layoutY="62.0" mnemonicParsing="false" onAction="#approveRequest" prefHeight="27.0" prefWidth="135.0" style="-fx-background-color: #3498DB; -fx-border-color: #9EE1FE;" text="Approve Request" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="discardBtn" layoutX="208.0" layoutY="62.0" mnemonicParsing="false" onAction="#discardRequest" prefHeight="27.0" prefWidth="135.0" style="-fx-background-color: #2ECC71; -fx-border-color: ff7900;" text="Discard Request" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="80.0" layoutY="17.0" opacity="0.88" prefHeight="39.0" prefWidth="230.0" text="Pending Requests" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

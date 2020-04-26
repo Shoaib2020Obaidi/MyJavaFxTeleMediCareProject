@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectmine.ChooseWhoRUController">
+   <children>
+      <BorderPane layoutX="96.0" layoutY="83.0" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="230.0" prefWidth="1000.0" style="-fx-background-color: #cccccc;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="220.0" fitWidth="344.0" layoutX="341.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/hospital2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="88.0" fitWidth="168.0" layoutX="673.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/ambulance.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="321.0" layoutY="264.0" prefHeight="43.0" prefWidth="364.0" text="Choose who you are" textFill="#271571">
+                     <font>
+                        <Font name="Bauhaus 93" size="37.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="88.0" fitWidth="168.0" layoutX="173.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/ambulance.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+         <left>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <GridPane prefHeight="415.0" prefWidth="662.0" BorderPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="adminBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#openAdminLogin" prefHeight="143.0" prefWidth="338.0" stylesheets="@../Styles.css/Styles_1.css" text="   Admin">
+                     <graphic>
+                        <ImageView fitHeight="86.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/admin-new.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="70.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="userBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#openUserLogin" prefHeight="143.0" prefWidth="338.0" stylesheets="@../Styles.css/Styles_1.css" text="User" GridPane.columnIndex="1">
+                     <graphic>
+                        <ImageView fitHeight="86.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/user-new.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="70.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="doctorBtn" contentDisplay="TOP" mnemonicParsing="false" onAction="#openDoctorLogin" prefHeight="143.0" prefWidth="338.0" stylesheets="@../Styles.css/Styles_1.css" text="Doctor" GridPane.columnIndex="2">
+                     <graphic>
+                        <ImageView fitHeight="86.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/doctor_tara.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="70.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+         </center>
+         <bottom>
+            <Pane prefHeight="169.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="393.0" layoutY="14.0" prefHeight="31.0" prefWidth="240.0" text="Tele-Medi-Care System">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="54.0" fitWidth="55.0" layoutX="477.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/telecare_transparent.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="789.0" layoutY="128.0" prefHeight="17.0" prefWidth="192.0" text="Developed By: Shoaib Obaidi - 2020">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="159.0" layoutY="2.0" prefHeight="0.0" prefWidth="695.0" />
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

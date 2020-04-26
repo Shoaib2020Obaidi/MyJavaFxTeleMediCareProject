@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectmine.DoctorsControlledByUserController">
+   <children>
+      <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="111.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="113.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/password.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signUpReg" layoutX="353.0" layoutY="293.0" mnemonicParsing="false" onAction="#signUp" prefHeight="32.0" prefWidth="179.0" style="-fx-background-color: #f123ff;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBtn" layoutX="141.0" layoutY="293.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: #0f0f0f;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="password" cacheShape="false" layoutX="155.0" layoutY="458.0" opacity="0.7" prefHeight="32.0" prefWidth="390.0" promptText="Enter Your Password" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="fullName" cacheShape="false" layoutX="140.0" layoutY="109.0" opacity="0.7" prefHeight="32.0" prefWidth="390.0" promptText="Enter Your Full  Name" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="speciality" cacheShape="false" layoutX="140.0" layoutY="143.0" opacity="0.7" prefHeight="32.0" prefWidth="390.0" promptText="Enter Your Speciality Name" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="clinicLocation" cacheShape="false" layoutX="141.0" layoutY="211.0" opacity="0.7" prefHeight="32.0" prefWidth="390.0" promptText="Insert Your Clinic's Location" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="userName" cacheShape="false" layoutX="155.0" layoutY="424.0" opacity="0.7" prefHeight="32.0" prefWidth="390.0" promptText="Enter Your User Name" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="96.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="96.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="96.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="96.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="111.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="ID" cacheShape="false" layoutX="140.0" layoutY="177.0" opacity="0.7" prefHeight="32.0" prefWidth="390.0" promptText="insert your ID Number" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="96.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="30.0" layoutX="112.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/user.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="mobileNumber" cacheShape="false" layoutX="156.0" layoutY="390.0" opacity="0.7" prefHeight="32.0" prefWidth="390.0" promptText="Enter Your Mobile Number" scaleShape="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="74.0" prefWidth="1100.0" style="-fx-background-color: #cccccc;">
+         <children>
+            <Label layoutX="271.0" layoutY="4.0" prefHeight="68.0" prefWidth="542.0" text="Doctor Registration Form">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="74.0" fitWidth="94.0" layoutX="59.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/hospital2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="clear" layoutX="238.0" layoutY="294.0" mnemonicParsing="false" onAction="#clear" prefHeight="32.0" prefWidth="94.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000; -fx-border-radius: 5; -fx-border-color: #00ff00;" text="Clear" textFill="#312d2d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="daysAvailable" layoutX="144.0" layoutY="246.0" prefHeight="26.0" prefWidth="382.0" />
+      <ChoiceBox fx:id="timeAvailableChoic" layoutX="160.0" layoutY="358.0" prefHeight="26.0" prefWidth="382.0" />
+   </children>
+</AnchorPane>
